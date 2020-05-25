@@ -10,7 +10,7 @@ class OpenCVCapture:
     """
     Init.
     """
-    self.cap = cv2.VideoCapture(0)
+    self.cap = cv2.VideoCapture('/data/videos/temp/2.mp4')  # 0)
 
   def read(self):
     """
