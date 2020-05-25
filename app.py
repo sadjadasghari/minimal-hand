@@ -97,7 +97,6 @@ def live_application(capture):
     mesh.paint_uniform_color(config.HAND_COLOR)
     mesh.compute_triangle_normals()
     mesh.compute_vertex_normals()
-    # for some version of open3d you may need `viewer.update_geometry(mesh)`
     viewer.update_geometry()
 
     viewer.poll_events()
@@ -112,8 +111,8 @@ def live_application(capture):
     )
     pygame.display.update()
 
-    if keyboard.is_pressed("esc"):
-      break
+    #if keyboard.is_pressed("esc"):
+    #  break
 
     clock.tick(30)
 
